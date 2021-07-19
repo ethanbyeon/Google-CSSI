@@ -1,0 +1,43 @@
+.hero .title { color: white; }
+.hero .subtitle { color: #d5e1eb; }
+.house-text { color: #f52549; }
+
+.hero-card {
+    margin: 10px 0 10px 0;
+    animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+    0% { transform: translateY(0%); }
+    50% {
+        box-shadow: 0 0 15px white;
+        transform: translateY(-7%);
+    }
+    100% { transform: translateY(0%); }
+}
+
+.card-content { background-color: black; }
+.card-content .title { color: white; }
+.card-content .subtitle { color: #99be1b; }
+.columns:not(:first-of-type) { margin: 50px 0 50px 0; }
+.columns:not(:last-child) { margin-bottom: 0; }
+
+.card { transition: all 0.5s ease; }
+.card:hover .subtitle + iframe {
+    opacity: 1;
+    height: 80px;
+}
+.card:hover {
+    transform: translateX(2%);
+    box-shadow: 0 0 20px #f96574;
+}
+
+body {
+    background-color: #191919;
+    scroll-behavior: smooth;
+}
+
+iframe {
+    transition: opacity 0.5s ease-out;
+    opacity: 0;
+    height: 0;
+}

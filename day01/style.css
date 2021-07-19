@@ -1,0 +1,78 @@
+html { scroll-behavior: smooth; }
+  
+body {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    background-color: aliceblue;
+    font: "IBM Plex Sans", sans-serif;
+}
+
+#intro {
+    background-color: #f52549;
+    text-align: center;
+    color: white;
+}
+
+#about {
+    background-color: #99be1b;
+    color: #283618;
+    text-align: center;
+}
+
+#menu { background-color: #FEC47F; }
+#menu h2 { text-align: center; }
+.items {
+    position: relative;
+    left: 41vh;
+    width: 50%;
+}
+.items h4 { color: red; }
+
+#message { text-align: center; }
+
+section {
+    padding: 100px;
+    background-color: #d5e1eb;
+}
+
+div {
+    padding: 20px;
+    margin: 20px;
+    background-color: #eaeaea;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+p { margin-top: 30px; }
+
+h1 {
+    text-align: center;
+    font-size: 64px;
+}
+h2 { font-size: 34px; }
+h4 { font-size: 30px; }
+h5 {
+    font-size: 30px;
+    text-align: right;
+}
+
+img {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+footer {
+    padding: 30px;
+    padding-top: 20px;
+    margin-bottom: -20px;
+    margin-left: -40px;
+    margin-right: -40px;
+    text-align: center;
+}
