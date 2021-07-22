@@ -1,3 +1,11 @@
 const getMessages = () => {
-    console.log("Yo.");
+    const passcode = document.querySelector("#passcode");
+    
+    const messagesRef = firebase.database().ref();
+    messagesRef.on('value', (snapshot) => {
+        const data = snapshot.val();
+        console.log(data);
+    })
+
+    console.log("Yo.", passcode.value);
 }
