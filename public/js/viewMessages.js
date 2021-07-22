@@ -17,6 +17,13 @@ const getMessages = () => {
             return
         }
 
+        if(!(/\\?=.\\*[A-Z]/).test(password.value)) {
+            message.innerHTML = "Password must contain at least one uppercase letter."
+        }
+        if(!(/\\?=.\\*[a-z]/).test(password.value)) {
+            message.innerHTML = "Password must contain at least one lowercase letter."
+        }
+
         for (let key in data) {
             console.log(key, data[key]);
             if (data[key].password === password.value) {
