@@ -1,5 +1,5 @@
 const numbers = [1, 2, 3, 4, 5]
 
-for (const number of numbers) {
+numbers.forEach(number => {
     console.log(number)
-}
+})
