@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Poof!</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"> 
+    <link rel="stylesheet" href="css/style.css"> 
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/8.8.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.8.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <script defer src="js/writeMessage.js"></script>
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="header">
+          <h1 class="title">Poof!</h1>
+          <p class="subtitle">By Teyon & Ethan</p>
+        </div>
+        <div class="board mt-6">
+          <div class="history">
+            Cool beans
+          </div>
+          <div class="row">
+            <div class="field">
+              <div class="control">
+                <input class="input has-icons-left is-medium" type="text" id="passcode" placeholder="Password?" required />
+                <button class="button is-block is-normal" onclick="onSubmit()">Send</button>
+              </div>
+            </div>
+            <div class="field">
+              <div class="control">
+                <textarea class="textarea is-medium is-rounded" type="text" id="message" placeholder="Pass a note." rows="1" required></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

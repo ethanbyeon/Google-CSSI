@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+:root {
+  --red: #EB5160;
+  --yellow: #fdbb27;
+  --green: #8d902e;
+  --black: #071013;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  letter-spacing: 1px;
+  min-height: 100vh;
+/*   background: var(--red); */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+/*   align-items: center; */
+}
+
+.header {
+  font-family: 'Special Elite', cursive;
+}
+.title {
+  font-size: 60px;
+}
+.subtitle {
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.board {
+  background-color: var(--red);
+  display: flex;
+  justify-content: center;
+  width: 50vw;
+  height: 50vh;
+  border-radius: 10px;
+  position: relative;
+}
+
+.history {
+  display: flex;
+  align-items: center;
+}
+
+.row {
+  background-color: var(--green);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1.5rem;
+}
+.message-area {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+.message {
+  background-color: white;
+  padding: 20px;
+  border: none;
+  width: 100%;
+}
+.send {
+  background-color: transparent;
+  font-family: 'Special Elite', cursive;
+  font-weight: bold;
+  position: absolute;
+  right: 2rem;
+  top: 45px;
+  border: none;
+  color: orange;
+  transition: all 0.3s ease-in;
+}
+.send:hover {
+  color: var(--green);
+}
+input:focus {
+  outline: none;
+}
